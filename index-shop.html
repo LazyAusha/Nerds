@@ -30,8 +30,8 @@
 						<legend class="name-filter">Стоимость:</legend>
 						<ul>
 							<li class="filter-option"><input type="range" name="price-line" min="0" max="15000" step="1"></li>
-							<li class="filter-option"><label><output type="text" name="min-price">От</output></label></li>
-							<li class="filter-option"><label><output type="text" name="max-price">До</output></label></li>
+							<li class="filter-option"><label><input type="text">От</label></li>
+							<li class="filter-option"><label><input type="text">До</label></li>
 						</ul>
 					</fieldset>
 
@@ -64,11 +64,11 @@
 					<fieldset>
 						<legend class="name-filter">Сортировать:</legend>
 						<ul class="sort">
-							<li class="filter-option filter-current"><label><button type="button" name="price-fiter">По цене</button></label></li>
-							<li class="filter-option"><label><button type="button" name="type-filter">По типу</button></label></li>
-							<li class="filter-option"><label><button type="button" name="name-filter">По названию</button></label></li>
-							<li class="filter-option"><label><button type="button" name="down">Вниз</button></label></li>
-							<li class="filter-option"><label><button type="button" name="up">Вверх</button></label></li>
+							<li class="filter-option filter-current"><a class="sort-btn" href="#">По цене</a></li>
+							<li class="filter-option"><a class="sort-btn" href="#">По типу</a></li>
+							<li class="filter-option"><a class="sort-btn" href="#">По названию</a></li>
+							<li class="filter-option"><a class="sort-btn" href="#">Вниз</a></li>
+							<li class="filter-option"><a class="sort-btn" href="#">Вверх</a></li>
 						</ul>
 					</fieldset>
 				</div>
@@ -137,7 +137,7 @@
 				</p>
 				<p>
 					<label for="user-mail-text">Текст письма:</label>
-					<textarea class="letter-icon" id="user-mail-text" name="letter" rows="10" cols="45" name="text-area" placeholder="В свободной форме"></textarea>
+					<textarea class="letter-icon" id="user-mail-text" name="letter" rows="10" cols="45" placeholder="В свободной форме"></textarea>
 				</p>
 				<button class="btn" type="submit">Отправить</button>
 			</form>
